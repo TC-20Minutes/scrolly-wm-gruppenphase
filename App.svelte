@@ -391,39 +391,6 @@
                         {/if}
                     </div>
 
-                    <!-- Vollbild-Umschalter (Fullscreen-API) -->
-                    <button
-                        class="fs-toggle"
-                        on:click={toggleFullscreen}
-                        aria-label={isFullscreen ? 'Vollbild beenden' : 'Vollbild'}
-                    >
-                        {#if isFullscreen}
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                            <span>Schliessen</span>
-                        {:else}
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M9 4H4v5M20 9V4h-5M4 15v5h5M15 20h5v-5"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                            <span>Vollbild</span>
-                        {/if}
-                    </button>
-
                     <!-- Marken-Logo (20 Tile) dezent in der Ecke -->
                     <img class="brand-logo" src={asset('/images/logo-20min.png')} alt="20 Minuten" />
                 </div>
@@ -449,6 +416,39 @@
                     </div>
                 {/each}
             </div>
+
+            <!-- Vollbild-Umschalter (Fullscreen-API) – auf Section-Ebene, damit Klicks nicht von den Steps abgefangen werden -->
+            <button
+                class="fs-toggle"
+                on:click={toggleFullscreen}
+                aria-label={isFullscreen ? 'Vollbild beenden' : 'Vollbild'}
+            >
+                {#if isFullscreen}
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                    <span>Schliessen</span>
+                {:else}
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M9 4H4v5M20 9V4h-5M4 15v5h5M15 20h5v-5"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                    <span>Vollbild</span>
+                {/if}
+            </button>
 
             {#if showScrollPrompt}
                 <div class="banner-wrapper">
@@ -530,6 +530,7 @@
         --z-steps: 1;
         --z-overlay: 2;
         --z-prompt: 3;
+        --z-controls: 4;
         --z-preloader: 50;
 
         /* Motion */
@@ -706,10 +707,11 @@
 
     /* === Vollbild-Button === */
     .fs-toggle {
-        position: absolute;
+        position: fixed; /* am Viewport-Rand, über den Steps – sonst fangen diese den Klick ab */
         left: 18px;
         bottom: 16px;
-        z-index: var(--z-overlay);
+        z-index: var(--z-controls);
+        pointer-events: auto;
         display: inline-flex;
         align-items: center;
         gap: 7px;
