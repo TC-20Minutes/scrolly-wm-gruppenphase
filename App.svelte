@@ -708,8 +708,8 @@
     /* === Vollbild-Button === */
     .fs-toggle {
         position: fixed; /* am Viewport-Rand, über den Steps – sonst fangen diese den Klick ab */
-        left: 18px;
-        bottom: 16px;
+        top: 18px;
+        right: 18px;
         z-index: var(--z-controls);
         pointer-events: auto;
         display: inline-flex;
@@ -947,6 +947,11 @@
         .media-meta {
             top: 14px;
             left: 14px;
+        }
+
+        .fs-toggle {
+            top: 14px;
+            right: 14px;
         }
     }
 
