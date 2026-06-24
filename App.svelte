@@ -251,6 +251,17 @@
         syncVisibleVideoPlayback();
     };
 
+    // Vollbild: nutzt die Fullscreen-API (funktioniert im iframe dank allow="fullscreen").
+    let isFullscreen = false;
+    const toggleFullscreen = () => {
+        const root = document.documentElement;
+        if (document.fullscreenElement || document.webkitFullscreenElement) {
+            (document.exitFullscreen || document.webkitExitFullscreen)?.call(document);
+        } else {
+            (root.requestFullscreen || root.webkitRequestFullscreen)?.call(root);
+        }
+    };
+
     onMount(() => {
         const initScrollama = () => {
             if (typeof window.scrollama === 'undefined') {
@@ -286,6 +297,14 @@
         setVh();
         window.addEventListener('resize', setVh);
 
+        const onFsChange = () => {
+            isFullscreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
+            setVh();
+            if (scroller) scroller.resize();
+        };
+        document.addEventListener('fullscreenchange', onFsChange);
+        document.addEventListener('webkitfullscreenchange', onFsChange);
+
         const handleResize = () => {
             if (scroller) scroller.resize();
         };
@@ -307,6 +326,8 @@
             if (scroller) scroller.destroy();
             window.removeEventListener('resize', handleResize);
             window.removeEventListener('resize', setVh);
+            document.removeEventListener('fullscreenchange', onFsChange);
+            document.removeEventListener('webkitfullscreenchange', onFsChange);
         };
     });
 </script>
@@ -369,6 +390,39 @@
                             <span class="meta-location">{allTextboxes[activeStepIndex].location}</span>
                         {/if}
                     </div>
+
+                    <!-- Vollbild-Umschalter (Fullscreen-API) -->
+                    <button
+                        class="fs-toggle"
+                        on:click={toggleFullscreen}
+                        aria-label={isFullscreen ? 'Vollbild beenden' : 'Vollbild'}
+                    >
+                        {#if isFullscreen}
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <span>Schliessen</span>
+                        {:else}
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M9 4H4v5M20 9V4h-5M4 15v5h5M15 20h5v-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <span>Vollbild</span>
+                        {/if}
+                    </button>
 
                     <!-- Marken-Logo (20 Tile) dezent in der Ecke -->
                     <img class="brand-logo" src={asset('/images/logo-20min.png')} alt="20 Minuten" />
@@ -492,6 +546,16 @@
         height: 100%;
         font-family: 'Matter', system-ui, sans-serif;
         background-color: var(--c-dark-blue);
+        /* Scrollbar ausblenden (Scrollen bleibt möglich) – für immersives Embedding */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* alte Edge/IE */
+    }
+
+    :global(html::-webkit-scrollbar),
+    :global(body::-webkit-scrollbar) {
+        width: 0;
+        height: 0;
+        display: none; /* Chrome, Safari, neue Edge */
     }
 
     .preloader {
@@ -638,6 +702,43 @@
         height: auto;
         opacity: 0.92;
         filter: drop-shadow(0 2px 10px rgba(5, 15, 49, 0.5));
+    }
+
+    /* === Vollbild-Button === */
+    .fs-toggle {
+        position: absolute;
+        left: 18px;
+        bottom: 16px;
+        z-index: var(--z-overlay);
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 8px 12px;
+        border: 1px solid rgba(237, 244, 255, 0.22);
+        border-radius: 8px;
+        background: var(--c-mid-blue);
+        color: var(--c-white);
+        font-family: inherit;
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 1;
+        cursor: pointer;
+        -webkit-appearance: none;
+        appearance: none;
+        transition:
+            background-color 0.25s var(--ease-out),
+            border-color 0.25s var(--ease-out);
+    }
+
+    .fs-toggle:hover {
+        background: var(--c-blue);
+        border-color: var(--c-blue);
+    }
+
+    .fs-toggle svg {
+        width: 16px;
+        height: 16px;
+        display: block;
     }
 
     /* === Steps / Textboxen === */
@@ -860,6 +961,14 @@
 
         .brand-logo {
             width: 30px;
+        }
+
+        .fs-toggle span {
+            display: none; /* nur Icon auf sehr kleinen Screens */
+        }
+
+        .fs-toggle {
+            padding: 8px;
         }
     }
 
