@@ -30,20 +30,20 @@
                 {
                     title: 'Grosse <span class="hl">Momente</span> der WM-Gruppenphase 2026',
                     text: 'Tore, Tränen, Überraschungen und virale Szenen: Die Gruppenphase der WM 2026 hat bereits mehr Geschichten geschrieben als manche ganze Turniere. Von Torjägern über Fan-Magnete bis zu spektakulären Rekorden – das sind die Highlights der ersten Turnierwochen.',
-                    source: ''
+                    source: 'Bildquelle: Freshfocus'
                 }
             ]
         },
         {
             type: 'image',
-            src: '/images/urn_newsml_dpa_com_20090101_260622-99-823969.jpg',
+            src: '/images/2282803413.jpg',
             alt: 'Lionel Messi bejubelt einen seiner Treffer in der Gruppenphase der WM 2026.',
             location: 'Torschützenkönig',
             textboxes: [
                 {
                     title: 'Messi trifft weiter',
                     text: 'Mit fünf Treffern führt Lionel Messi die Torschützenliste nach der Gruppenphase an. Der Argentinier beweist einmal mehr, dass Fussballgesetze für ihn nur bedingt gelten. Während andere Legenden längst zurückgetreten sind, prägt Messi noch immer die grösste Bühne des Sports.',
-                    source: ''
+                    source: 'Bildquelle: GettyImages'
                 }
             ]
         },
@@ -56,20 +56,20 @@
                 {
                     title: 'Neuseeland gewinnt die Stilwertung',
                     text: 'Nicht die Fussballstars, sondern die 20-Minuten-Community hat entschieden: Über 5000 Leserinnen und Leser kürten das schwarze Heimtrikot von Neuseeland zum schönsten Dress der WM. Dahinter landeten die Schweiz und Kroatien. Bei den Auswärtstrikots teilten sich die Schweiz und Argentinien den ersten Platz.',
-                    source: ''
+                    source: 'Bildquelle: Puma'
                 }
             ]
         },
         {
             type: 'image',
-            src: '/images/kone-verletzung-kanada.avif',
+            src: '/images/2282271924.jpg',
             alt: 'Spielszene rund um die schwere Verletzung von Ismaël Koné im Spiel von Kanada.',
             location: 'Schwerste Verletzung',
             textboxes: [
                 {
                     title: 'Schockmoment für Kanada',
                     text: 'Die schwere Verletzung von Ismaël Koné sorgte für Betroffenheit weit über die kanadische Mannschaft hinaus. Der Zwischenfall überschattete einen der höchsten Siege der Gruppenphase und erinnerte daran, wie schnell sich Fussball von Freude zu Drama wandeln kann.',
-                    source: ''
+                    source: 'Bildquelle: GettyImages'
                 }
             ]
         },
@@ -82,7 +82,7 @@
                 {
                     title: 'Haaland und Ødegaard geben den Takt vor',
                     text: 'Norwegens Stars sorgten nicht nur auf dem Platz für Begeisterung. Nach dem Sieg gegen Senegal griffen Erling Haaland und Martin Ødegaard zu den Trommeln und feierten gemeinsam mit den Fans. Die Bilder verbreiteten sich innert Stunden um die Welt und wurden zu einem der meistgeteilten WM-Momente der Gruppenphase.',
-                    source: ''
+                    source: 'Videoquelle: FIFA Facebook'
                 }
             ]
         },
@@ -94,8 +94,8 @@
             textboxes: [
                 {
                     title: 'Vozinha wird zur WM-Sensation',
-                    text: '40 Jahre alt, WM-Debütant und plötzlich weltberühmt: Kap-Verde-Goalie Vozinha lieferte gegen Spanien eine Leistung für die Geschichtsbücher ab. Mit sieben Paraden hielt er den Favoriten im Alleingang auf und wurde über Nacht zu einem der Gesichter dieser WM.',
-                    source: ''
+                    text: '40 Jahre alt, WM-Debütant und plötzlich weltberühmt: Kap-Verde-Goalie Vozinha lieferte gegen Spanien eine Leistung für die Geschichtsbücher ab. Mit sieben Paraden hielt er den Favoriten fast im Alleingang auf und wurde über Nacht zu einem der Gesichter dieser WM.',
+                    source: 'Bildquelle: GettyImages'
                 }
             ]
         },
@@ -106,9 +106,100 @@
             location: 'Tollstes Stadion',
             textboxes: [
                 {
-                    title: 'Seattle liefert die beste Kulisse',
-                    text: 'Das Lumen Field entwickelte sich während der Gruppenphase zum lautesten Stadion des Turniers. Die steilen Tribünen, die Nähe zum Spielfeld und die fussballbegeisterte Stadt sorgten für eine Atmosphäre, die selbst neutrale Fans beeindruckte. Wer WM-Stimmung suchte, fand sie in Seattle.',
-                    source: ''
+                    title: 'Seattle überzeugt mit einer eindrucksvollen Kulisse',
+                    text: 'Das Lumen Field bietet die spektakulärste Kulisse mit der Stadt Seattle im Hintergrund. Es gilt als eine der lautesten Fussball- und Football-Arenen Nordamerikas – begünstigt durch steile Tribünen und ein Dach, das den Schall im Stadion hält. Die Nähe zum Spielfeld und die fussballbegeisterte Stadt sorgen für eine Atmosphäre, die selbst neutrale Fans beeindruckt. Wer während der Gruppenphase echte WM-Stimmung suchte, fand sie in Seattle.',
+                    source: 'Bildquelle: GettyImages · Quelle: sport.de'
+                }
+            ]
+        },
+        {
+            type: 'image',
+            src: '/images/AFP_B82Z2PJ-1.jpg',
+            alt: 'Cristiano Ronaldo bejubelt einen seiner Treffer in der Gruppenphase der WM 2026.',
+            location: 'Rekordmann',
+            textboxes: [
+                {
+                    title: 'Ronaldo trifft nach Kritik',
+                    text: 'Nachdem Portugal beim enttäuschenden WM-Auftakt gegen DR Kongo ein Remis holte, waren die kritischen Stimmen laut. Sogar Fussballlegende Thierry Henry sprach sich gegen den Angreifer aus. Die Antwort des Superstars? Er traf im nächsten Spiel einfach doppelt und setzte damit ebenfalls einen neuen Rekord. Er ist der erste Spieler, der in sechs Weltmeisterschaften trifft.',
+                    source: 'Bildquelle: AFP'
+                }
+            ]
+        },
+        {
+            type: 'image',
+            src: '/images/AFP_B7XT4BF.jpg',
+            alt: 'Kylian Mbappé bejubelt einen seiner Treffer in der Gruppenphase der WM 2026.',
+            location: 'Rekordjagd',
+            textboxes: [
+                {
+                    title: 'Mbappé auf Messis Spuren',
+                    text: 'Gegen Österreich schreibt Messi Geschichte und setzt den neuen Weltrekord für die meisten Treffer an einer WM. Doch Frankreich-Ass Mbappé startet direkt einige Stunden später die Aufholjagd: Gegen Irak gelingt ihm das Doppelpack. Somit fehlen dem Stürmer noch zwei Tore, um den frischen Rekord zu schlagen.',
+                    source: 'Bildquelle: AFP'
+                }
+            ]
+        },
+        {
+            type: 'image',
+            src: '/images/2282256937.jpg',
+            alt: 'Granit Xhaka zeigt beim Torjubel gegen Bosnien eine Geste in Richtung der Kritiker.',
+            location: 'Nati-Statement',
+            textboxes: [
+                {
+                    title: 'Xhaka-Jubel',
+                    text: 'Die Nati-Fans staunen nicht schlecht, als Xhaka zum Torjubel gegen Bosnien eine “Redet nur”-Geste zeigt. Es ist eine klare Antwort auf die Kritik im Vorfeld des Spiels, dass die Stimmung der Nati durch die harschen Worte von Captain Xhaka getrübt sei.',
+                    source: 'Bildquelle: GettyImages'
+                }
+            ]
+        },
+        {
+            type: 'video',
+            src: '/videos/933518.mp4',
+            alt: 'Das niederländische Königspaar feiert mit den Spielern von Curaçao in der Kabine.',
+            location: 'Royaler Besuch',
+            textboxes: [
+                {
+                    title: 'Niederländisches Königspaar in Kabine',
+                    text: 'Die Welt schaut nicht schlecht, als das Niederländische Königspaar mit Underdog Curaçao überschwänglich in der Kabine feiert. Nach dem 0:0-Unentschieden gegen Ecuador tanzen die Royals ausgelassen mit den Spielern.',
+                    source: 'Videoquelle: X/thebluewaveffk'
+                }
+            ]
+        },
+        {
+            type: 'image',
+            src: '/images/AFP_B7L282A-1.jpg',
+            alt: 'Johan Manzambi bejubelt seinen Treffer für die Schweizer Nati gegen Bosnien.',
+            location: 'Senkrechtstarter',
+            textboxes: [
+                {
+                    title: 'Manzambi',
+                    text: 'Nach dem Spiel gegen Bosnien leuchtete ein Stern am Nati-Himmel am allerhellsten: Johan Manzambi. Er war es, der in der 74. Minute als Dosenöffner die ersehnte Erlösung brachte und kurz vor Schluss nochmals nachlegte. Die Gesamtleistung des Youngsters war so überzeugend, dass Thomas Müller dem FC Bayern München riet, ein Auge auf den Mittelfeldspieler zu werfen.',
+                    source: 'Bildquelle: AFP'
+                }
+            ]
+        },
+        {
+            type: 'image',
+            src: '/images/2282560992.jpg',
+            alt: 'Hervé Renard als neuer Trainer Tunesiens an der Seitenlinie bei der WM 2026.',
+            location: 'Trainerwechsel',
+            textboxes: [
+                {
+                    title: 'Wechsel Renard',
+                    text: 'Tunesien zog nach dem gescheiterten WM-Auftakt gegen Schweden die Reissleine. Nach der 5:1-Niederlage wurde Trainer Sabri Lamouch per sofort gefeuert und durch Hervé Renard ersetzt. Doch der Wechsel brachte nichts – Tunesien holte sich wenige Tage später gegen Japan die nächste Klatsche.',
+                    source: 'Bildquelle: GettyImages'
+                }
+            ]
+        },
+        {
+            type: 'image',
+            src: '/images/2281564826.jpg',
+            alt: 'Spieler und Fans von Curaçao feiern bei der WM 2026.',
+            location: 'Aussenseiter',
+            textboxes: [
+                {
+                    title: 'Curaçao-Euphorie',
+                    text: 'Der Inselstaat ist die kleinste Nation, die sich jemals für eine WM qualifiziert hat. Im WM-Auftakt konnte die Mannschaft einem der Topfavoriten Deutschland sogar ein Tor abluchsen. Auf der ganzen Welt verfallen Fans der Curaçao-Mania.',
+                    source: 'Bildquelle: GettyImages'
                 }
             ]
         },
@@ -119,9 +210,9 @@
             location: 'Fazit',
             textboxes: [
                 {
-                    title: 'Mehr Geschichten als erwartet',
-                    text: '48 Teams, 104 Spiele und unzählige Fragezeichen vor dem Turnier: Die erste WM im neuen Format wurde von vielen kritisch betrachtet. Die Gruppenphase hat jedoch gezeigt, dass mehr Mannschaften auch mehr Geschichten bedeuten. Kap Verde schrieb Fussballmärchen, Messi traf weiter wie in seinen besten Tagen, Norwegen begeisterte Fans auf und neben dem Platz. Die Vorrunde lieferte Überraschungen, Emotionen und Gesprächsstoff – und macht Lust auf alles, was in der K.-o.-Phase noch kommen könnte.',
-                    source: ''
+                    title: 'Die WM ist lanciert',
+                    text: '48 Teams, 104 Spiele und vor dem Turnier viele Fragezeichen: Das neue WM-Format wurde kritisch beäugt. Nach der Gruppenphase steht fest: Stoff für Geschichten gab es bereits reichlich. Curaçao sorgte für eines der schönsten Fussballmärchen, Lionel Messi und Cristiano Ronaldo bewiesen einmal mehr ihre Klasse, Norwegen begeisterte auf und neben dem Platz und auch die Schweizer Nati überzeugte mit starken Auftritten. Die Vorrunde bot Überraschungen, Emotionen und jede Menge Gesprächsstoff. Beste Voraussetzungen also für eine K.-o.-Phase, die diese Geschichten weiterschreiben könnte.',
+                    source: 'Bildquelle: Freshfocus'
                 }
             ]
         }
