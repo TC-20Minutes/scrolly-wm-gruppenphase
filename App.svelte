@@ -172,7 +172,7 @@
             textboxes: [
                 {
                     title: 'Manzambi',
-                    text: 'Nach dem Spiel gegen Bosnien leuchtete ein Stern am Nati-Himmel am allerhellsten: Johan Manzambi. Er war es, der in der 74. Minute als Dosenöffner die ersehnte Erlösung brachte und kurz vor Schluss nochmals nachlegte. Die Gesamtleistung des Youngsters war so überzeugend, dass Thomas Müller dem FC Bayern München riet, ein Auge auf den Mittelfeldspieler zu werfen.',
+                    text: 'Nach dem Spiel gegen Bosnien leuchtete ein Stern am Nati-Himmel am allerhellsten: Johan Manzambi. Er war es, der in der 74. Minute als Dosenöffner die ersehnte Erlösung brachte und kurz vor Schluss nochmals nachlegte. Die Gesamtleistung des Youngsters war so überzeugend, dass Thomas Müller dem FC Bayern München riet, ein Auge auf den Mittelfeldspieler zu werfen. Dass der gebürtige Genfer keine Eintagsfliege ist, zeigt er wenige Tage später gegen Kanada, als er erneut trifft.',
                     source: 'Bildquelle: AFP'
                 }
             ]
